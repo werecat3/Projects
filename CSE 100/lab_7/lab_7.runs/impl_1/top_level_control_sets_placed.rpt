@@ -1,0 +1,140 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Nov 23 10:06:37 2021
+| Host         : 104PC18 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    62 |
+|    Minimum number of control sets                        |    62 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   221 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    62 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    54 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               5 |            2 |
+| Yes          | No                    | No                     |             234 |          102 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |                  Enable Signal                 | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+------------------------------------------------+------------------+------------------+----------------+
+|  not_so_slow/slowclk/clk_out | controller/Hsync_counter/four_bit_2/CE0_0      |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | score/four_bit_1/CE0                           | btnR_IBUF        |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Vsync_counter/four_bit_1/CE0_0      |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Vsync_counter/four_bit_2/Two_second |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Vsync_counter/four_bit_2/CE0        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Vsync_counter/four_bit_2/CE0_0      |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Hsync_counter/four_bit_2/CE0        |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_3/four_bit_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Hsync_counter/four_bit_2/CE0_1      |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Hsync_counter/four_bit_2/Two_second |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_3/four_bit_3/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | controller/Hsync_counter/four_bit_1/CE0        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_3/four_bit_1/CE0                       |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_3/four_bit_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | score/four_bit_3/CE0                           | btnR_IBUF        |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | score/four_bit_2/CE0                           | btnR_IBUF        |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_3/four_bit_3/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | time_counter/four_bit_1/CE0                    | my_baby/R0       |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | top_block/four_bit_1/bit2_2                    |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_4/four_bit_1/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | my_baby/CE0                                    |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | my_baby/CE0_0                                  |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_4/four_bit_2/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_4/four_bit_2/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_4/four_bit_2/CE0_1                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | top_block/four_bit_2/bit3_2                    |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_1/four_bit_1/CE0_0                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_1/four_bit_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_1/four_bit_3/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | top_block/four_bit_3/bit2_2                    |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_2/four_bit_1/CE0_1                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_2/four_bit_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_2/four_bit_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_3/four_bit_1/CE0_0                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_3/four_bit_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_4/four_bit_1/CE0_0                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_4/four_bit_2/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Rs_wall_4/four_bit_3/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | vsync_edge/e_vsync                             | my_baby/R0       |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | gate_passing3/UP0                              | btnR_IBUF        |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0        |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO                |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO                |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_1/four_bit_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_1/four_bit_4/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_1/four_bit_4/CE0                       |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_2/four_bit_1/CE0_1                     |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_2/four_bit_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_2/four_bit_2/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | bot_block/four_bit_1/CE0                       |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | bot_block/four_bit_1/CE0_0                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | bot_block/four_bit_3/CE0                       |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out |                                                | btnR_IBUF        |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_2/four_bit_4/Two_second                |                  |                3 |              6 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_3/four_bit_2/Two_second                |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | my_baby/CE0_1                                  |                  |                6 |              8 |
+|  not_so_slow/slowclk/clk_out | my_baby/CE0_2                                  |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_4/four_bit_2/Two_second                |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out | my_baby/led_OBUF[2]                            | btnR_IBUF        |                2 |              8 |
+|  not_so_slow/slowclk/clk_out | Ls_wall_1/four_bit_4/bit2_1                    |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out |                                                |                  |               12 |             20 |
++------------------------------+------------------------------------------------+------------------+------------------+----------------+
+
+
