@@ -80,6 +80,4 @@ void ButtonsInit(void);
  */
 uint8_t ButtonsCheckEvents(void);
 
-#define BUTTON_STATES() (((PORTD >> 4) & 0x0E) | ((PORTF >> 1) & 0x01))
-
 #endif // BUTTONS_H

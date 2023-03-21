@@ -1,0 +1,8 @@
+Jerret Schlosser
+I worked with people over discord on the main server but that is it.
+
+This lab was about opening a file and reading everything correctly. The most important aspects were how to use stuff like fgetc and fseek. This isn't represented in the lab doc at all. 
+
+My approach to this lab was read the doc, make the player.c, make the game.c, then make my main and my make file. This was a good system and I would do it again. This lab wasn't very streamlined though. I wasn't able to make my functions very efficiently. I believe this is because the lab doc didn't explain what was needed. This lab I needed a lot of help from the ta's again. I didn't know what to do what so ever without them. After my first two read throughs of the doc, I realized it wasn't helpful at all. I learned everything from the ta's and thats it. 
+
+My final result was good. It seems like it works perfectly with very few bugs. It took me probably 20-28 hours. I liked the coding once I knew what I needed to do. I disliked how lost this lab made us. The doc this week was the most useless one yet. I think this lab would have been much more worthwhile if what we were doing was better explained. I am still quite confused on some parts of the lab and I don't know how to learn it. I suggest teaching more about the lab. Right now, it just feels like this random lab in the middle of the class that isn't related to anything we have done yet. The doc was useless this time, and in class you definitly need to teach about what we actually code because right now I just learn from the ta's

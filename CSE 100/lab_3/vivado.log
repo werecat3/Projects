@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 21 17:42:09 2021
+# Process ID: 7508
+# Current directory: D:/Lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14768 D:\Lab_3\Lab_3.xpr
+# Log file: D:/Lab_3/vivado.log
+# Journal file: D:/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab_3/Lab_3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-1744-104PC15/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 695.348 ; gain = 94.324
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_level
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1109.750 ; gain = 173.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'incrementer' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm4_1' [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm4_1' (1#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (2#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+WARNING: [Synth 8-7023] instance 'Add7' of module 'full_adder' has 4 connections declared, but only 3 given [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'incrementer' (3#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [D:/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm8_1' [D:/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm8_1' (4#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (5#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm2_1x8' [D:/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm2_1x8' (6#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'o' does not match port width (8) of module 'm2_1x8' [D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+INFO: [Synth 8-6157] synthesizing module 'lab3_digsel' [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:232]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:24]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (7#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (8#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (9#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (10#1) [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:157]
+INFO: [Synth 8-6157] synthesizing module 'GND' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:14643]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (11#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:14643]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:294]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:264]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (12#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81988]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (13#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (14#1) [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:264]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (15#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (16#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (17#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (18#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (19#1) [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:294]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (20#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (21#1) [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:157]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:245]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (22#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+INFO: [Synth 8-6155] done synthesizing module 'lab3_digsel' (23#1) [D:/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (24#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:23]
+WARNING: [Synth 8-3917] design top_level has port dp driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port an[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.383 ; gain = 234.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.383 ; gain = 234.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.383 ; gain = 234.992
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Lab_3/Lab_3.srcs/constrs_1/imports/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Lab_3/Lab_3.srcs/constrs_1/imports/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1283.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 2 instances
+  XOR2 => LUT2: 16 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.234 ; gain = 369.844
+56 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1306.234 ; gain = 582.297
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 21 18:33:12 2021...

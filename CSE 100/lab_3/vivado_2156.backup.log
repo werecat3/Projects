@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 12 19:04:10 2021
+# Process ID: 2156
+# Current directory: D:/Lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11716 D:\Lab_3\Lab_3.xpr
+# Log file: D:/Lab_3/vivado.log
+# Journal file: D:/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab_3/Lab_3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-5364-BE104PC02/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 697.664 ; gain = 101.488
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: incrementer
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1116.547 ; gain = 175.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'incrementer' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm4_1' [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm4_1' (1#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (2#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add0' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add1' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add2' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add3' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add4' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add5' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add6' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+ERROR: [Synth 8-448] named port connection 'sel_0' does not exist for instance 'Add7' of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+ERROR: [Synth 8-6156] failed synthesizing module 'incrementer' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1180.141 ; gain = 238.785
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 0 Warnings, 0 Critical Warnings and 10 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: incrementer
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'incrementer' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'm4_1' [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'm4_1' (1#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (2#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [Synth 8-689] width (3) of port connection 'sel' does not match port width (2) of module 'full_adder' [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'incrementer' (3#1) [D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:23]
+WARNING: [Synth 8-3331] design incrementer has unconnected port b[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1180.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1180.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1180.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Lab_3/Lab_3.srcs/constrs_1/imports/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Lab_3/Lab_3.srcs/constrs_1/imports/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1296.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.359 ; gain = 152.219
+9 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.359 ; gain = 152.219
+close_design

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 23 17:41:59 2021
+# Process ID: 4392
+# Current directory: D:/lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8376 D:\lab_4\lab_4.xpr
+# Log file: D:/lab_4/vivado.log
+# Journal file: D:/lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lab_4/lab_4.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v D:/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v}
+update_compile_order -fileset sources_1
+add_files -norecurse D:/lab4_clks.v
+update_compile_order -fileset sources_1

@@ -1,0 +1,18 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/lab_7/lab_7.sim/sim_1/behav/xsim/glbl.v,1637355964,verilog,,,,glbl,,,,,,,,
+D:/lab_7/lab_7.srcs/sim_1/new/state_machine_sim.v,1637355960,verilog,,,,state_machine_sim,,,,,,,,
+,,,,,,top_level_sim,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/new/state_machine.v,,sixteen_bit_counter,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab7_clks.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab7_clks,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab7_clks.v,,hex7seg,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,,m8_1,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/counter.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/edge_detector.v,,counter,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/edge_detector.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,,edge_detector,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,,ring_counter,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,1637355964,verilog,,D:/lab_7/lab_7.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v,,selector,,,,,,,,
+D:/lab_7/lab_7.srcs/sources_1/new/state_machine.v,1637466453,verilog,,D:/lab_7/lab_7.srcs/sources_1/new/top_level.v,,state_machine,,,,,,,,
+,,,,D:/lab_7/lab_7.srcs/sources_1/new/vga_controller.v,,top_level,,,,,,,,
+,,,,D:/lab_7/lab_7.srcs/sim_1/new/top_level_sim.v,,vga_controller,,,,,,,,

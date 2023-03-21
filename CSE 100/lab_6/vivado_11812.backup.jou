@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  9 17:44:07 2021
+# Process ID: 11812
+# Current directory: D:/lab_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11908 D:\lab_6\lab_6.xpr
+# Log file: D:/lab_6/vivado.log
+# Journal file: D:/lab_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lab_6/lab_6.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top_level_sim.tcl
+run 10 us
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/top_level_sim/UUT/my_baby/psI}} {{/top_level_sim/UUT/my_baby/psEL}} {{/top_level_sim/UUT/my_baby/psMFL}} {{/top_level_sim/UUT/my_baby/psRS}} {{/top_level_sim/UUT/my_baby/psER}} {{/top_level_sim/UUT/my_baby/psMFR}} {{/top_level_sim/UUT/my_baby/psLS}} 
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/top_level_sim/UUT/display}} 
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+archive_project D:/lab_6.xpr.zip -temp_dir D:/lab_6/.Xil/Vivado-11812-DESKTOP-RQFDO6U -force -include_local_ip_cache

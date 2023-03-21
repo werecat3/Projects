@@ -1,0 +1,752 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  2 10:10:28 2021
+# Process ID: 5628
+# Current directory: C:/Users/jrschlos/Desktop/lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1760 C:\Users\jrschlos\Desktop\lab_5\lab_5.xpr
+# Log file: C:/Users/jrschlos/Desktop/lab_5/vivado.log
+# Journal file: C:/Users/jrschlos/Desktop/lab_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jrschlos/Desktop/lab_5/lab_5.xpr
+INFO: [Project 1-313] Project file moved from 'D:/lab_5/.Xil/Vivado-13664-DESKTOP-RQFDO6U/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 781.363 ; gain = 188.402
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/jrschlos/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/jrschlos/Desktop/state_machine_testbench.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'eight_bit_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj eight_bit_counter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/eight_bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eight_bit_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eight_bit_counter_behav xil_defaultlib.eight_bit_counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eight_bit_counter_behav xil_defaultlib.eight_bit_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.eight_bit_counter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot eight_bit_counter_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim/xsim.dir/eight_bit_counter_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim/xsim.dir/eight_bit_counter_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov  2 13:05:37 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  2 13:05:37 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 841.840 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "eight_bit_counter_behav -key {Behavioral:sim_1:Functional:eight_bit_counter} -tclbatch {eight_bit_counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source eight_bit_counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'eight_bit_counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 857.992 ; gain = 16.152
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 857.992 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'eight_bit_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj eight_bit_counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eight_bit_counter_behav xil_defaultlib.eight_bit_counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eight_bit_counter_behav xil_defaultlib.eight_bit_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 857.992 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top state_machine_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim/xsim.dir/state_machine_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim/xsim.dir/state_machine_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov  2 13:08:24 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  2 13:08:24 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 936.859 ; gain = 1.758
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "state_machine_testbench_behav -key {Behavioral:sim_1:Functional:state_machine_testbench} -tclbatch {state_machine_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source state_machine_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'state_machine_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 943.613 ; gain = 8.512
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1006.883 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "state_machine_testbench_behav -key {Behavioral:sim_1:Functional:state_machine_testbench} -tclbatch {state_machine_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source state_machine_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'state_machine_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1006.883 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "state_machine_testbench_behav -key {Behavioral:sim_1:Functional:state_machine_testbench} -tclbatch {state_machine_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source state_machine_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'state_machine_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 47.887
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/psw}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/psd}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/psc}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/psdif}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/pss}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/state_machine_testbench/UUT/w}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'state_machine_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj state_machine_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/lab_5/lab_5.srcs/sources_1/new/state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/state_machine_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_machine_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/lab_5/lab_5.sim/sim_1/behav/xsim'
+"xelab -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 9612537beaa7428db1d57b4fae2822ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot state_machine_testbench_behav xil_defaultlib.state_machine_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.state_machine
+Compiling module xil_defaultlib.state_machine_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot state_machine_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Nov  2 15:45:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/synth_1/runme.log
+[Tue Nov  2 15:45:52 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Nov  2 15:54:41 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/synth_1/runme.log
+[Tue Nov  2 15:54:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Nov  2 15:58:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/synth_1/runme.log
+[Tue Nov  2 15:58:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1774.762 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A2838BA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2463.996 ; gain = 689.234
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Nov  2 16:12:31 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/synth_1/runme.log
+[Tue Nov  2 16:12:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2903.648 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A2838BA
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+archive_project C:/Users/jrschlos/Desktop/lab_5.xpr.zip -temp_dir C:/Users/jrschlos/Desktop/lab_5/.Xil/Vivado-5628-104PC18 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/jrschlos/Desktop/lab_5/.Xil/Vivado-5628-104PC18' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

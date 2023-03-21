@@ -1,0 +1,21 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/lab_6/lab_6.sim/sim_1/behav/xsim/glbl.v,1636858840,verilog,,,,glbl,,,,,,,,
+D:/lab_6/lab_6.srcs/sim_1/new/top_level_sim.v,1636511839,verilog,,,,top_level_sim,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,,m8_1,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/new/edge_detector.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,,edge_detector,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/incrementer.v,,hex7seg,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/lab6_clks.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/m28_1.v,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab6_clks,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,,ring_counter,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/imports/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,1636508636,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/state_machine.v,,selector,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/adder.v,1636858841,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/counter.v,,full_adder,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/counter.v,1636858841,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/new/edge_detector.v,,counter,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/incrementer.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/lab6_clks.v,,incrementer,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/m28_1.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/m4_1.v,,m28_1,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/m4_1.v,1636524394,verilog,,D:/lab_6/lab_6.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,,m4_1,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/state_machine.v,1636858841,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/time_counter.v,,state_machine,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/time_counter.v,1636508638,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/top_level.v,,time_counter,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/top_level.v,1636512506,verilog,,D:/lab_6/lab_6.srcs/sources_1/new/turkey_counter.v,,top_level,,,,,,,,
+D:/lab_6/lab_6.srcs/sources_1/new/turkey_counter.v,1636508638,verilog,,D:/lab_6/lab_6.srcs/sim_1/new/top_level_sim.v,,turkey_counter,,,,,,,,

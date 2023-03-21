@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov  4 19:11:02 2021
+# Process ID: 12996
+# Current directory: D:/lab_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12776 D:\lab_4\lab_4.xpr
+# Log file: D:/lab_4/vivado.log
+# Journal file: D:/lab_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/lab_4/lab_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 699.832 ; gain = 95.371
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testTC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testTC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/edge_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/lab4_clks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab4_clks
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/ring_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_bit_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sim_1/imports/testTC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testTC
+INFO: [VRFC 10-311] analyzing module show_7segDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xelab -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testTC_behav xil_defaultlib.testTC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testTC_behav xil_defaultlib.testTC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:39]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 741.281 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top top_level_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_level_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_level_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/edge_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/lab4_clks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab4_clks
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/ring_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_bit_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sim_1/new/top_level_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xelab -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_level_testbench_behav xil_defaultlib.top_level_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_level_testbench_behav xil_defaultlib.top_level_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:39]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top testTC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testTC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testTC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/edge_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/lab4_clks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab4_clks
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/ring_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_bit_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/lab_4/lab_4.srcs/sim_1/imports/testTC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testTC
+INFO: [VRFC 10-311] analyzing module show_7segDisplay
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/lab_4/lab_4.sim/sim_1/behav/xsim'
+"xelab -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testTC_behav xil_defaultlib.testTC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testTC_behav xil_defaultlib.testTC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:39]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/lab_4/lab_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top top_level_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1

@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Program%20Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S</file>
-            <file>file:/C:/School/CSE%2013/Lab09/Lab9.X/Uart1.c</file>
-            <file>file:/C:/School/CSE%2013/Lab09/Lab9.X/CircularBuffer.c</file>
-            <file>file:/C:/School/CSE%2013/Lab09/Lab9.X/CircularBuffer.h</file>
-            <file>file:/C:/School/CSE%2013/Lab09/Lab9.X/MessageTest.c</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/MessageTest.c</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/BattleBoats.h</file>
+            <file>file:/C:/Program%20Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/NegotiationTest.c</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/Negotiation.h</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/Message.c</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/Negotiation.c</file>
+            <file>file:/D:/CSE%2013e/jrschlos/Lab09/Lab9.X/Message.h</file>
         </group>
     </open-files>
 </project-private>

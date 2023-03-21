@@ -1,0 +1,1465 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 14 15:42:47 2021
+# Process ID: 1744
+# Current directory: C:/Users/jrschlos/Desktop/Lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5088 C:\Users\jrschlos\Desktop\Lab_3\Lab_3.xpr
+# Log file: C:/Users/jrschlos/Desktop/Lab_3/vivado.log
+# Journal file: C:/Users/jrschlos/Desktop/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jrschlos/Desktop/Lab_3/Lab_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 755.387 ; gain = 116.820
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_behav -key {Behavioral:sim_1:Functional:simulation} -tclbatch {simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 857.070 ; gain = 61.652
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 857.070 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 857.070 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 857.070 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/simulation/UUT/inc}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 858.543 ; gain = 0.848
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 879.543 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 879.543 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 879.543 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/simulation/UUT/hex_1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 879.543 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+ERROR: [VRFC 10-3423] illegal output port connection to 'c' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+ERROR: [VRFC 10-3423] illegal output port connection to 'c' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 996.926 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 996.926 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 996.926 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 996.926 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 996.926 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 996.926 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1
+[Thu Oct 14 16:20:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Oct 14 16:22:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 14 16:24:29 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1235.609 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89BDFA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2068.152 ; gain = 832.543
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_behav -key {Behavioral:sim_1:Functional:simulation} -tclbatch {simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2715.164 ; gain = 16.992
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2715.164 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2715.164 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/simulation/UUT/inc}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2715.164 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/simulation/UUT/hex_1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2715.164 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/simulation/UUT/hex_2}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2715.164 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/simulation/UUT/hex_2}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2715.164 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 14 17:06:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/synth_1/runme.log
+[Thu Oct 14 17:06:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/runme.log
+run 1000 ns
+run 1000 ns
+run 1000 ns
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2715.164 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89BDFA
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2837.070 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2837.070 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ERROR: [Wavedata 42-21] A waveform data source could not be established for the requested wave configuration.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2837.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2860.988 ; gain = 23.918
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulation_behav -key {Behavioral:sim_1:Functional:simulation} -tclbatch {simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2861.906 ; gain = 0.918
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/simulation/UUT/inc}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:31]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:32]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:33]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:34]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:35]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:36]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:37]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'sel' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v:38]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2861.906 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module incrementer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clkcntrl4
+INFO: [VRFC 10-311] analyzing module lab3_digsel
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/imports/lab3_digsel.v:237]
+INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
+INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m2_1x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sim_1/new/simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jrschlos/Desktop/Lab_3/Lab_3.sim/sim_1/behav/xsim'
+"xelab -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6a0cd834770d4e4b8ae0474d0eef0e8c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simulation_behav xil_defaultlib.simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'o' [C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/top_level.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m4_1
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.incrementer
+Compiling module xil_defaultlib.m8_1
+Compiling module xil_defaultlib.hex7seg
+Compiling module xil_defaultlib.m2_1x8
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.XOR2
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.clkcntrl4
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.lab3_digsel
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2861.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2861.906 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2861.906 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 14 17:52:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/synth_1/runme.log
+[Thu Oct 14 17:52:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2861.906 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89BDFA
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 14 18:31:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/synth_1/runme.log
+[Thu Oct 14 18:31:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/Lab_3/Lab_3.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+archive_project C:/Users/jrschlos/Desktop/Lab_3.xpr.zip -temp_dir C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-1744-104PC15 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-1744-104PC15' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

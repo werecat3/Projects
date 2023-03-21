@@ -1,0 +1,19 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/lab_5/lab_5.sim/sim_1/behav/xsim/glbl.v,1636066795,verilog,,,,glbl,,,,,,,,
+,,,,,,,,,,,,,,
+D:/lab_5/lab_5.srcs/sim_1/new/top_level_sim.v,1635995430,verilog,,,,show_7segDisplay;top_level_sim,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/new/random_number_gen.v,,m8_1,,,,,,,,
+,,,,D:/lab_5/lab_5.srcs/sources_1/new/eight_bit_counter.v,,edge_detector,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/lab5_clks.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab5_clks,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/lab5_clks.v,,hex7seg,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/counter.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/Desktop/lab_4/lab_4.srcs/sources_1/new/edge_detector.v,,counter,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,,ring_counter,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/selector.v,1635988882,verilog,,D:/lab_5/lab_5.srcs/sources_1/new/state_machine.v,,selector,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/new/LED_shifter.v,1636066796,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/counter.v,,LED_shifter,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/new/eight_bit_counter.v,1635997033,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,,eight_bit_counter,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/new/random_number_gen.v,1635988884,verilog,,D:/lab_5/lab_5.srcs/sources_1/imports/lab_4/lab_4.srcs/sources_1/new/ring_counter.v,,random_number_gen,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/new/state_machine.v,1636066796,verilog,,D:/lab_5/lab_5.srcs/sources_1/new/top_level.v,,state_machine,,,,,,,,
+D:/lab_5/lab_5.srcs/sources_1/new/top_level.v,1636006135,verilog,,D:/lab_5/lab_5.srcs/sim_1/new/top_level_sim.v,,top_level,,,,,,,,

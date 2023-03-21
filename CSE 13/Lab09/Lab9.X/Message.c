@@ -22,15 +22,15 @@ uint8_t Message_CalculateChecksum(const char* payload){
 int Message_ParseMessage(const char* payload,
         const char* checksum_string, BB_Event * message_event){
     if (strlen(payload) < 5){
-        //return STANDARD_ERROR;
+        return STANDARD_ERROR;
     }
     if (strlen(checksum_string) != 2){
-        //return STANDARD_ERROR;
+        return STANDARD_ERROR;
     }
     char *ptr;
     long checksum_checker = strtoul(checksum_string, &ptr, 16);
     if (Message_CalculateChecksum(payload) != checksum_checker){
-        //return STANDARD_ERROR;
+        return STANDARD_ERROR;
     }
     //
     //checking the message id now this is what changes the state in the struct
@@ -39,28 +39,22 @@ int Message_ParseMessage(const char* payload,
     strcpy(str, payload);
     const char delim[2] = ",";
     char *index;
-    char *index_1;
-    char *index_2;
-    char *index_3;
-    char *index_4;
+    char *message_id;
+    
     int counter = 0;
     index = strtok(str, delim);
     while(index != NULL) {
         if (counter == 0){
-            index_1 = index;
-            printf("%s\n", index);
+            message_id = index;
         }
         else if (counter == 1){
-            index_2 = index;
-            printf("%s\n", index);
+            message_event->param0 = (unsigned)atol(index);
         }
         else if (counter == 2){
-            index_3 = index;
-            printf("%s\n", index);
+            message_event->param1 = (unsigned)atol(index);
         }
         else if (counter == 3){
-            index_4 = index;
-            printf("%s\n", index);
+            message_event->param2 = (unsigned)atol(index);
         }
         else {
             return STANDARD_ERROR;
@@ -68,55 +62,44 @@ int Message_ParseMessage(const char* payload,
         counter += 1;
         index = strtok(NULL, delim);
     }
-    long new_index_2 = (unsigned)atol(index_2);
-    long new_index_3 = (unsigned)atol(index_3);
-    long new_index_4 = (unsigned)atol(index_4);
     
-    if (strcmp(index_1, "CHA") == 0){ //for CHA
+    if (strcmp(message_id, "CHA") == 0){ //for CHA
         if (counter != 2){
             return STANDARD_ERROR;
         }
         message_event->type = BB_EVENT_CHA_RECEIVED;
-        message_event->param0 = new_index_2;
         return SUCCESS;
     }
     
-    else if (strcmp(index_1, "ACC") == 0){ //for ACC
+    else if (strcmp(message_id, "ACC") == 0){ //for ACC
         if (counter != 2){
             return STANDARD_ERROR;
         }
         message_event->type = BB_EVENT_ACC_RECEIVED;
-        message_event->param0 = new_index_2;
         return SUCCESS;
     }
     
-    else if (strcmp(index_1, "REV") == 0){ //for REV
+    else if (strcmp(message_id, "REV") == 0){ //for REV
         if (counter != 2){
             return STANDARD_ERROR;
         }
         message_event->type = BB_EVENT_REV_RECEIVED;
-        message_event->param0 = new_index_2;
         return SUCCESS;
     }
     
-    else if (strcmp(index_1, "SHO") == 0){ //for SHO
+    else if (strcmp(message_id, "SHO") == 0){ //for SHO
         if (counter != 3){
             return STANDARD_ERROR;
         }
         message_event->type = BB_EVENT_SHO_RECEIVED;
-        message_event->param0 = new_index_2;
-        message_event->param1 = new_index_3;
         return SUCCESS;
     }
     
-    else if (strcmp(index_1, "RES") == 0){ //for RES
+    else if (strcmp(message_id, "RES") == 0){ //for RES
         if (counter != 4){
             return STANDARD_ERROR;
         }
         message_event->type = BB_EVENT_RES_RECEIVED;
-        message_event->param0 = new_index_2;
-        message_event->param1 = new_index_3;
-        message_event->param2 = new_index_4;
         return SUCCESS;
     }
     
@@ -134,40 +117,28 @@ int Message_Encode(char *message_string, Message message_to_encode){
     uint8_t checksum;
     switch(message_to_encode.type){
         case MESSAGE_CHA:
-            sprintf(string, "CHA,%d", message_to_encode.param0);
-            checksum = Message_CalculateChecksum(string);
-            sprintf(another_string, "$%s*%d\n", string, checksum);
-            message_string = another_string;
+            sprintf(string, PAYLOAD_TEMPLATE_CHA, message_to_encode.param0);
             break;
         case MESSAGE_ACC:
-            sprintf(string, "ACC,%d", message_to_encode.param0);
-            checksum = Message_CalculateChecksum(string);
-            sprintf(another_string, "$%s*%d\n", string, checksum);
-            message_string = another_string;
+            sprintf(string, PAYLOAD_TEMPLATE_ACC, message_to_encode.param0);
             break;
         case MESSAGE_REV:
-            sprintf(string, "REV,%d", message_to_encode.param0);
-            checksum = Message_CalculateChecksum(string);
-            sprintf(another_string, "$%s*%d\n", string, checksum);
-            message_string = another_string;
+            sprintf(string, PAYLOAD_TEMPLATE_REV, message_to_encode.param0);
             break;
         case MESSAGE_SHO:
-            sprintf(string, "SHO,%d,%d", message_to_encode.param0, 
+            sprintf(string, PAYLOAD_TEMPLATE_SHO, message_to_encode.param0, 
                     message_to_encode.param1);
-            checksum = Message_CalculateChecksum(string);
-            sprintf(another_string, "$%s*%d\n", string, checksum);
-            message_string = another_string;
             break;
         case MESSAGE_RES:
-            sprintf(string, "RES,%d,%d,%d", message_to_encode.param0, 
+            sprintf(string, PAYLOAD_TEMPLATE_RES, message_to_encode.param0, 
                     message_to_encode.param1, message_to_encode.param2);
-            checksum = Message_CalculateChecksum(string);
-            sprintf(another_string, "$%s*%d\n", string, checksum);
-            message_string = another_string;
             break;
         default:
             return 0;
     }
+    checksum = Message_CalculateChecksum(string);
+    sprintf(another_string, MESSAGE_TEMPLATE, string, checksum);
+    message_string = another_string;
     int length = strlen(message_string);
     return length;
 }

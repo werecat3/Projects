@@ -5,7 +5,7 @@
 //CMPE13 Support Library
 #include "BOARD.h"
 #include "Oled.h"
-#include "Leds.h"
+#include "Leds_Lab06.h"
 
 
 // Microchip libraries

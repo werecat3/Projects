@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 12 11:42:41 2021
+# Process ID: 5364
+# Current directory: C:/Users/jrschlos/Desktop/Lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10980 C:\Users\jrschlos\Desktop\Lab_3\Lab_3.xpr
+# Log file: C:/Users/jrschlos/Desktop/Lab_3/vivado.log
+# Journal file: C:/Users/jrschlos/Desktop/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jrschlos/Desktop/Lab_3/Lab_3.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Lab_3/.Xil/Vivado-3036-DESKTOP-RQFDO6U/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 817.504 ; gain = 164.410
+update_compile_order -fileset sources_1
+close [ open C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v w ]
+add_files C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v w ]
+add_files C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v w ]
+add_files C:/Users/jrschlos/Desktop/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+archive_project C:/Users/jrschlos/Desktop/Lab_3.xpr.zip -temp_dir C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-5364-BE104PC02 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/jrschlos/Desktop/Lab_3/.Xil/Vivado-5364-BE104PC02' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

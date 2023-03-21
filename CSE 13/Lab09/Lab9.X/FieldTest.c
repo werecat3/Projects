@@ -23,7 +23,7 @@ int main()
     GuessData guess1 ={0,0,0};
     
     int test_counter = 0;
-    
+    printf("\n-----Field.c Testing-----\n");
     printf("---Testing FieldInit---\n");
     FieldInit(&field1,&field2);
     if (field1.smallBoatLives == 0 &&

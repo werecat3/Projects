@@ -3,15 +3,15 @@
   <executable name="dist/default/production/Lab6.X.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
-      <length>531968</length>                 
-      <used>9576</used>                     
-      <free>522392</free>                     
+      <length>138752</length>                 
+      <used>15916</used>                     
+      <free>122836</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
-      <length>32768</length>                 
-      <used>544</used>                     
-      <free>32224</free>                     
+      <length>16384</length>                 
+      <used>776</used>                     
+      <free>15608</free>                     
     </memory>                              
   </executable>                            
 </project>                                 

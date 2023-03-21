@@ -5,7 +5,7 @@
 //CMPE13 Support Library
 #include "BOARD.h"
 #include "Buttons.h"
-#include "Leds.h"
+#include "Leds_Lab06.h"
 
 // Microchip libraries
 #include <xc.h>
@@ -37,61 +37,55 @@ int main(void) {
     IPC1bits.T1IS = 0; // subpriority of 0 arbitrarily 
     IEC0bits.T1IE = 1; // turn the interrupt on
 
+    /***************************************************************************************************
+     * Your code goes in between this comment and the following one with asterisks.
+     **************************************************************************************************/
+    printf("Welcome to Jrschlos's lab6 part5 (bounce_buttons).  Compiled on %s %s.\n", __TIME__, __DATE__);
     ButtonsInit();
     LEDS_INIT();
-    uint8_t my_leds = 0x00;
-    int counter;
-    int inc = 1;
-    LEDS_SET(0x00);
-    
-    //Part 1
-    /*
     while (1) {
-        if (buttonEvents != BUTTON_EVENT_NONE) {
-            if ((buttonEvents & BUTTON_EVENT_1DOWN) == 0x02) {
-                LEDS_SET(LEDS_GET() ^ 0x03);
+        if (SWITCH_STATES() == 0b0000) {
+            if (buttonEvents != BUTTON_EVENT_NONE) {
+                if ((buttonEvents & BUTTON_EVENT_1DOWN) == 0x02) {
+                    LEDS_SET(LEDS_GET() ^ 0x03);
+                }
+                if ((buttonEvents & BUTTON_EVENT_2DOWN) == 0x08) {
+                    LEDS_SET(LEDS_GET() ^ 0x0C);
+                }
+                if ((buttonEvents & BUTTON_EVENT_3DOWN) == 0x20) {
+                    LEDS_SET(LEDS_GET() ^ 0x30);
+                }
+                if ((buttonEvents & BUTTON_EVENT_4DOWN) == 0x80) {
+                    LEDS_SET(LEDS_GET() ^ 0xC0);
+                }
+                buttonEvents = BUTTON_EVENT_NONE;
             }
-            if ((buttonEvents & BUTTON_EVENT_2DOWN) == 0x08) {
-                LEDS_SET(LEDS_GET() ^ 0x0C);
+        }
+        if (SWITCH_STATES() == 0b0001) {
+            if(buttonEvents != BUTTON_EVENT_NONE){    
+                if ((buttonEvents & BUTTON_EVENT_1UP) == 0x01) {
+                    LEDS_SET(LEDS_GET() ^ 0x03);
+                }
+                if ((buttonEvents & BUTTON_EVENT_2UP) == 0x04) {
+                    LEDS_SET(LEDS_GET() ^ 0x0C);
+                }
+                if ((buttonEvents & BUTTON_EVENT_3UP) == 0x10) {
+                    LEDS_SET(LEDS_GET() ^ 0x30);
+                }
+                if ((buttonEvents & BUTTON_EVENT_4UP) == 0x40) {
+                    LEDS_SET(LEDS_GET() ^ 0xC0);
+                }
+                buttonEvents = BUTTON_EVENT_NONE;
             }
-            if ((buttonEvents & BUTTON_EVENT_3DOWN) == 0x20) {
-                LEDS_SET(LEDS_GET() ^ 0x30);
-            }
-            if ((buttonEvents & BUTTON_EVENT_4DOWN) == 0x80) {
-                LEDS_SET(LEDS_GET() ^ 0xC0);
-            }
-            buttonEvents = BUTTON_EVENT_NONE;
         }
     }
-    */
-    
-          
-    ///*
-    while (1) {
-        LEDS_SET(my_leds);
-        counter = counter + inc;
-        my_leds = (uint8_t)(counter);
-        if (buttonEvents != BUTTON_EVENT_NONE){
-            LEDS_SET(0x00);
-            counter = 0;
-        
-        }
-        if (my_leds > 0xff){
-            LEDS_SET(0x00);
-            counter = 0;
-        }
-        int i;
-        int random;
-        int NOPS_FOR_5MS = 200000;//this is gonna change
-        //this is my nop stop. 
-        //i need to figure out what the nops for 5ms is
-        //i need to find a number that when i count to it will equal 5ms
-        for (i = 0; i < NOPS_FOR_5MS ; i++){
-            random++;
-        }
-    }
-    //*/
 }
+
+/***************************************************************************************************
+ * Your code goes in between this comment and the preceding one with asterisks
+ **************************************************************************************************/
+
+
 
 /**
  * This is the interrupt for the Timer1 peripheral. It should check for button events and stores them in a

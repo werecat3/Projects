@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  2 10:10:28 2021
+# Process ID: 5628
+# Current directory: C:/Users/jrschlos/Desktop/lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1760 C:\Users\jrschlos\Desktop\lab_5\lab_5.xpr
+# Log file: C:/Users/jrschlos/Desktop/lab_5/vivado.log
+# Journal file: C:/Users/jrschlos/Desktop/lab_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jrschlos/Desktop/lab_5/lab_5.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/jrschlos/Desktop/lab_4/lab_4.srcs/sources_1/imports/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/jrschlos/Desktop/state_machine_testbench.v
+update_compile_order -fileset sim_1
+launch_simulation
+source eight_bit_counter.tcl
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top state_machine_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source state_machine_testbench.tcl
+close_sim
+launch_simulation
+source state_machine_testbench.tcl
+close_sim
+launch_simulation
+source state_machine_testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/psw}} 
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/psd}} 
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/psc}} 
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/psdif}} 
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/pss}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/state_machine_testbench/UUT/w}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jrschlos/Desktop/lab_5/lab_5.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+archive_project C:/Users/jrschlos/Desktop/lab_5.xpr.zip -temp_dir C:/Users/jrschlos/Desktop/lab_5/.Xil/Vivado-5628-104PC18 -force -include_local_ip_cache

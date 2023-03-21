@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Lab_3/Lab_3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/full_adder.v,1634190256,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,,full_adder,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/hex7seg.v,1634193148,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v,,hex7seg,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/incrementer.v,1634108815,verilog,,D:/lab3_digsel.v,,incrementer,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v,1634090633,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v,,m2_1x8,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/m4_1.v,1634090634,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,,m4_1,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/m8_1.v,1634185110,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v,,m8_1,,,,,,,,
+D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v,1634193137,verilog,,,,top_level,,,,,,,,
+D:/lab3_digsel.v,1634192306,verilog,,D:/Lab_3/Lab_3.srcs/sources_1/new/m2_1x8.v,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab3_digsel,,,,,,,,

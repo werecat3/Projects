@@ -1,0 +1,10 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28ec092470b34bc5b26960688833d7d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testTC_behav xil_defaultlib.testTC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'DTC' on this module [D:/lab_4/lab_4.srcs/sources_1/new/sixteen_bit_counter.v:39]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 13 08:27:40 2021
+# Process ID: 12536
+# Current directory: D:/Lab_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15768 D:\Lab_3\Lab_3.xpr
+# Log file: D:/Lab_3/vivado.log
+# Journal file: D:/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Lab_3/Lab_3.xpr
+update_compile_order -fileset sources_1
+close [ open D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v w ]
+add_files D:/Lab_3/Lab_3.srcs/sources_1/new/top_level.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/lab3_digsel.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
